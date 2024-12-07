@@ -12,7 +12,7 @@ function Hero() {
       sx={{
         position: "relative",
         width: "50%",
-        marginTop: 15,
+        mt: 15,
         placeItems: "center",
       }}
     >
@@ -71,8 +71,8 @@ function Hero() {
           height: "227px",
           transform: "rotate(17deg)",
           backgroundColor: "#6F00D9",
-          top: "30%",
-          left: "60%",
+          top: "25%",
+          left: "57%",
         }}
       >
         <CardMedia
@@ -103,8 +103,8 @@ function Hero() {
           height: "117px",
           transform: "rotate(18deg)",
           backgroundColor: "#EBE9ED",
-          top: "110%",
-          left: "30%",
+          top: "70%",
+          left: "24%",
         }}
       >
         <CardMedia
@@ -139,7 +139,7 @@ function Hero() {
           height: "100px",
           transform: "rotate(14deg)",
           borderRadius: 2,
-          top: "120%",
+          top: "85%",
           left: "60%",
         }}
       />

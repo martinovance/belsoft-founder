@@ -1,5 +1,6 @@
 import { AppBar, Box, Button, Stack, Typography } from "@mui/material";
 import Logo3 from "../../assets/Logo3.svg";
+import StrokeLine from "../../assets/StrokeLine.svg";
 import { ArrowForward } from "@mui/icons-material";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -142,9 +143,19 @@ const Home = () => {
       <Stack
         direction="row"
         sx={{
+          position: "relative",
           padding: "24px 72px",
         }}
       >
+        <img
+          src={StrokeLine}
+          style={{
+            position: "absolute",
+            height: "746px",
+            left: "38.5%",
+            marginTop: 20,
+          }}
+        />
         <Header />
         <Hero />
       </Stack>

@@ -1,4 +1,12 @@
-import { Typography, Button, Box } from "@mui/material";
+import { Typography, Button, Box, Avatar, Stack } from "@mui/material";
+
+import RightArrow from "../../../assets/RightArrow.svg";
+import Col1 from "../../../assets/Col1.svg";
+import Col2 from "../../../assets/Col2.svg";
+import Col3 from "../../../assets/Col3.svg";
+import Col4 from "../../../assets/Col4.svg";
+import Col5 from "../../../assets/Col5.svg";
+import BoxArrowUpRight from "../../../assets/BoxArrowUpRight.svg";
 
 function Header() {
   return (
@@ -10,32 +18,105 @@ function Header() {
         justifyContent: "flex-start",
         alignItems: "flex-start",
         mt: 15,
+        gap: "35px",
       }}
     >
-      <Typography variant="h4" component="h1" color="primary" gutterBottom>
-        Connect, Collaborate, Innovate!
-      </Typography>
-      <Typography variant="body1" color="textSecondary" gutterBottom>
+      <Box>
+        <Typography
+          sx={{
+            font: "Montserrat",
+            fontSize: "12px",
+            fontWeight: "bold",
+            lineHeight: "120%",
+          }}
+        >
+          Join our premier monthly meetup for startup founders and tech
+          visionaries
+        </Typography>
+        <Typography
+          sx={{
+            font: "Montserrat",
+            fontSize: "35px",
+            fontWeight: "bold",
+            lineHeight: "125%",
+            color: "#5C00B3",
+          }}
+        >
+          Connect, Collaborate, Innovate!
+        </Typography>
+      </Box>
+      <Typography
+        sx={{
+          font: "Montserrat",
+          fontSize: "16px",
+          fontWeight: "regular",
+          lineHeight: "150%",
+        }}
+      >
         Every last Friday of the month, we bring together the brightest minds in
         our local tech ecosystem. Whether you&apos;re a seasoned entrepreneur or
         just starting your journey, Founder&apos;s Friday is your launchpad for
         new ideas, valuable connections, and game-changing opportunities.
       </Typography>
-      <Button
-        variant="outlined"
-        color="primary"
-        size="large"
-        sx={{ marginTop: 2 }}
-      >
-        Register For Our Next Event
-      </Button>
-      <Typography
-        variant="subtitle1"
-        color="textSecondary"
-        sx={{ marginTop: 2 }}
-      >
-        Join us for our next meetup on the 26th of July 2024
-      </Typography>
+      <Box>
+        <Button
+          variant="outlined"
+          // size="large"
+          sx={{
+            width: "356px",
+            height: "60px",
+            color: "#9524FF",
+            borderColor: "#9524FF",
+            padding: "10px",
+            borderRadius: "40px",
+            textTransform: "capitalize",
+            fontSize: "20px",
+            gap: "8px",
+          }}
+        >
+          Register For Our Next Event
+          <img src={RightArrow} alt="arrow" />
+        </Button>
+        <Typography
+          sx={{
+            marginTop: 1,
+            font: "Montserrat",
+            fontSize: "12px",
+            fontWeight: "semibold",
+          }}
+        >
+          Join Us for our next meetup on the 26th of July 2024
+        </Typography>
+      </Box>
+
+      <Box>
+        <Stack direction="row" spacing={2}>
+          <Avatar alt="Collaborator 1" src={Col1} />
+          <Avatar alt="Collaborator 2" src={Col2} />
+          <Avatar alt="Collaborator 3" src={Col3} />
+          <Avatar alt="Collaborator 4" src={Col4} />
+          <Avatar alt="Collaborator 5" src={Col5} />
+        </Stack>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+            mt: 1,
+          }}
+        >
+          <Typography
+            sx={{
+              font: "Montserrat",
+              fontSize: "14px",
+              fontWeight: "bold",
+            }}
+          >
+            Become a collaborator today
+          </Typography>
+          <img src={BoxArrowUpRight} alt="arrow" />
+        </Box>
+      </Box>
     </Box>
   );
 }
