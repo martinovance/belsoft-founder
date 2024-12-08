@@ -1,9 +1,17 @@
 import { AppBar, Box, Button, Stack, Typography } from "@mui/material";
+import { ArrowForward } from "@mui/icons-material";
+
 import Logo3 from "../../assets/Logo3.svg";
 import StrokeLine from "../../assets/StrokeLine.svg";
-import { ArrowForward } from "@mui/icons-material";
+import DetailsLine from "../../assets/DetailsLine.svg";
+
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import About from "./components/About";
+import Offer from "./components/Offer";
+import DayDetails from "./components/DayDetails";
+import Sponsor from "./components/Sponsor";
+import Upcoming from "./components/Upcoming";
 
 const Home = () => {
   return (
@@ -154,11 +162,35 @@ const Home = () => {
             height: "746px",
             left: "38.5%",
             marginTop: 20,
+            zIndex: "-10",
           }}
         />
         <Header />
         <Hero />
       </Stack>
+
+      <About />
+      <Offer />
+      <Box
+        sx={{
+          position: "relative",
+          height: "600px",
+        }}
+      >
+        <img
+          src={DetailsLine}
+          alt="Line"
+          style={{
+            position: "absolute",
+            width: "100%",
+            bottom: 1,
+          }}
+        />
+        <DayDetails />
+      </Box>
+
+      <Sponsor />
+      <Upcoming />
     </Box>
   );
 };
