@@ -39,3 +39,39 @@ export const SPONSORCARD = [
     desc: "Gain exposure to a targeted audience of young professionals and entrepreneurs.",
   },
 ];
+
+export const ATTENDEES = [
+  {
+    title: "Mr Belba Ngoy",
+    desc: "Always a remarkable experience for my team and myself",
+  },
+  {
+    title: "Mr Belba Ngoy",
+    desc: "Always a remarkable experience for my team and myself",
+  },
+  {
+    title: "Mr Belba Ngoy",
+    desc: "Always a remarkable experience for my team and myself",
+  },
+];
+
+export const FAQSDATA = [
+  {
+    title: "Lorem ipsum dolor sit amet, consectetur adi elit.",
+  },
+  {
+    title: "Lorem ipsum dolor sit amet, consectetur adi elit.",
+  },
+  {
+    title: "Lorem ipsum dolor sit amet, consectetur adi elit.",
+  },
+  {
+    title: "Lorem ipsum dolor sit amet, consectetur adi elit.",
+  },
+  {
+    title: "Lorem ipsum dolor sit amet, consectetur adi elit.",
+  },
+  {
+    title: "Lorem ipsum dolor sit amet, consectetur adi elit.",
+  },
+];

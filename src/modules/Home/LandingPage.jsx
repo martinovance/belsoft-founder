@@ -1,8 +1,9 @@
-import { AppBar, Box, Button, Stack, Typography } from "@mui/material";
+import { AppBar, Box, Button, Divider, Stack, Typography } from "@mui/material";
 import { ArrowForward } from "@mui/icons-material";
 
 import Logo3 from "../../assets/Logo3.svg";
 import StrokeLine from "../../assets/StrokeLine.svg";
+import AvatarLine from "../../assets/AvatarLine.svg";
 import DetailsLine from "../../assets/DetailsLine.svg";
 
 import Header from "./components/Header";
@@ -12,6 +13,11 @@ import Offer from "./components/Offer";
 import DayDetails from "./components/DayDetails";
 import Sponsor from "./components/Sponsor";
 import Upcoming from "./components/Upcoming";
+import Attendees from "./components/Attendees";
+import Faqs from "./components/Faqs";
+import Footer from "./components/Footer";
+import Join from "./components/Join";
+import Register from "./components/Register";
 
 const Home = () => {
   return (
@@ -184,6 +190,7 @@ const Home = () => {
             position: "absolute",
             width: "100%",
             bottom: 1,
+            zIndex: "-10",
           }}
         />
         <DayDetails />
@@ -191,6 +198,28 @@ const Home = () => {
 
       <Sponsor />
       <Upcoming />
+      <Attendees />
+      <Box
+        sx={{
+          position: "relative",
+          // height: "600px",
+        }}
+      >
+        <img
+          src={AvatarLine}
+          alt="Line"
+          style={{
+            position: "absolute",
+            width: "100%",
+            top: "50%",
+          }}
+        />
+        <Join />
+      </Box>
+      <Register />
+      <Faqs />
+      <Divider sx={{ width: "99.9%", border: "1px solid #000" }} />
+      <Footer />
     </Box>
   );
 };

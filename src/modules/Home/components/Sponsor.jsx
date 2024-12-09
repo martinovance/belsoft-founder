@@ -2,8 +2,7 @@ import {
   Box,
   Button,
   Card,
-  FormControl,
-  // InputLabel,
+  InputLabel,
   TextField,
   Typography,
 } from "@mui/material";
@@ -61,7 +60,8 @@ const Sponsor = () => {
             alignItems: "flex-start",
             gap: "48px",
             height: "100%",
-            width: "100%",
+            // width: "100%",
+            px: "70px",
           }}
         >
           <Card
@@ -166,68 +166,102 @@ const Sponsor = () => {
               Friday
             </Typography>
 
-            <FormControl sx={{ width: "100%" }}>
-              <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  gap: "4px",
-                  mt: 3,
-                }}
-              >
-                <Box sx={{ width: "50%" }}>
-                  {/* <InputLabel>Name</InputLabel> */}
-                  <TextField fullWidth name="name" placeholder="Full name" />
-                </Box>
-                <Box sx={{ width: "50%" }}>
-                  {/* <InputLabel>
-                    Company <span>(optional)</span>
-                  </InputLabel> */}
-                  <TextField fullWidth name="name" placeholder="Company name" />
-                </Box>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                gap: "4px",
+                mt: 3,
+                width: "100%",
+              }}
+            >
+              <Box sx={{ width: "50%" }}>
+                <InputLabel>Name</InputLabel>
+                <TextField
+                  name="full-name"
+                  placeholder="Full name"
+                  InputProps={{
+                    style: {
+                      height: "48px",
+                      borderRadius: "8px",
+                      border: "1px solid #121212",
+                    },
+                  }}
+                />
               </Box>
-              <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  gap: "4px",
-                  mt: 3,
-                }}
-              >
-                <Box sx={{ width: "50%" }}>
-                  {/* <InputLabel>Name</InputLabel> */}
-                  <TextField
-                    fullWidth
-                    name="name"
-                    placeholder="Email Address"
-                  />
-                </Box>
-                <Box sx={{ width: "50%" }}>
-                  {/* <InputLabel>
-                    Company <span>(optional)</span>
-                  </InputLabel> */}
-                  <TextField fullWidth name="name" placeholder="Phone number" />
-                </Box>
+              <Box sx={{ width: "50%" }}>
+                <InputLabel>
+                  Company <span>(optional)</span>
+                </InputLabel>
+                <TextField
+                  name="full-name"
+                  placeholder="Full name"
+                  InputProps={{
+                    style: {
+                      height: "48px",
+                      borderRadius: "8px",
+                      border: "1px solid #121212",
+                    },
+                  }}
+                />
               </Box>
-              <Button
-                sx={{
-                  mt: 3,
-                  width: "189px",
-                  height: "40px",
-                  borderRadius: "4px",
-                  padding: "20px 70px",
-                  color: "#fff",
-                  backgroundColor: "#A649FF",
-                  gap: "8px",
-                  textTransform: "Capitalize",
-                }}
-              >
-                Sponsor
-                <ArrowRightAltIcon />
-              </Button>
-            </FormControl>
+            </Box>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                gap: "4px",
+                mt: 3,
+                width: "100%",
+              }}
+            >
+              <Box sx={{ width: "50%" }}>
+                <InputLabel>Email</InputLabel>
+                <TextField
+                  name="email"
+                  placeholder="Email address"
+                  InputProps={{
+                    style: {
+                      height: "48px",
+                      borderRadius: "8px",
+                      border: "1px solid #121212",
+                    },
+                  }}
+                />
+              </Box>
+              <Box sx={{ width: "50%" }}>
+                <InputLabel>Phone</InputLabel>
+                <TextField
+                  name="phone-number"
+                  placeholder="Phone number"
+                  InputProps={{
+                    style: {
+                      height: "48px",
+                      borderRadius: "8px",
+                      border: "1px solid #121212",
+                    },
+                  }}
+                />
+              </Box>
+            </Box>
+            <Button
+              sx={{
+                mt: 3,
+                width: "189px",
+                height: "40px",
+                borderRadius: "4px",
+                padding: "20px 70px",
+                color: "#fff",
+                backgroundColor: "#A649FF",
+                gap: "8px",
+                textTransform: "Capitalize",
+              }}
+            >
+              Sponsor
+              <ArrowRightAltIcon />
+            </Button>
           </Box>
         </Box>
       </Box>
