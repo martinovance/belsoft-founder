@@ -13,7 +13,7 @@ const Footer = () => {
         flexDirection: "column",
         justifyContent: "space-between",
         alignItems: "flex-start",
-        p: " 10px 70px",
+        p: { xs: "10px 16px", md: "10px 70px" },
         gap: "16px",
         height: "450px",
       }}
@@ -45,19 +45,27 @@ const Footer = () => {
         <Button
           variant="outlined"
           sx={{
-            width: "356px",
-            height: "60px",
+            width: { xs: "100%", sm: "356px" },
+            height: { xs: "40px", sm: "60px" },
             color: "#9524FF",
             borderColor: "#9524FF",
-            padding: "10px",
+            p: { xs: "6px", sm: "10px" },
             borderRadius: "40px",
             textTransform: "capitalize",
-            fontSize: "20px",
+            fontSize: { xs: "16px", sm: "20px" },
             gap: "8px",
           }}
         >
           Register For Our Next Event
-          <img src={RightArrow} alt="arrow" />
+          <Box
+            component="img"
+            src={RightArrow}
+            alt="arrow"
+            sx={{
+              width: { xs: 15, sm: 30 },
+              height: { xs: 15, sm: 30 },
+            }}
+          />
         </Button>
       </Box>
 
@@ -75,6 +83,7 @@ const Footer = () => {
         <Box
           sx={{
             display: "flex",
+            flexDirection: { xs: "column", md: "row" },
             justifyContent: "space-between",
             alignItems: "center",
             width: "100%",

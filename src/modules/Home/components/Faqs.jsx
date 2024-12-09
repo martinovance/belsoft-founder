@@ -11,7 +11,7 @@ const Faqs = () => {
         justifyContent: "flex-start",
         alignItems: "flex-start",
         gap: "16px",
-        padding: "70px",
+        p: { xs: "16px", md: "70px" },
       }}
     >
       <Typography
@@ -31,11 +31,11 @@ const Faqs = () => {
         spacing={4}
         sx={{
           mt: 1,
-          px: "30px",
+          px: { xs: "16px", md: "30px" },
         }}
       >
         {FAQSDATA.map((item, i) => (
-          <Grid key={i} item md={6}>
+          <Grid key={i} item xs={12} sm={6} xl={4}>
             <Box
               sx={{
                 display: "flex",

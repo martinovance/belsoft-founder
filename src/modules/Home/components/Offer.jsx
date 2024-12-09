@@ -12,8 +12,8 @@ const Offer = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        px: "70px",
-        mt: 15,
+        px: { xs: "16px", md: "72px" },
+        mt: { xs: 5, md: 15 },
       }}
     >
       <Typography
@@ -32,7 +32,7 @@ const Offer = () => {
           flexDirection: "column",
           justifyContent: "flex-start",
           alignItems: "center",
-          mt: 10,
+          mt: { xs: 5, md: 10 },
           width: "100%",
         }}
       >
@@ -41,8 +41,9 @@ const Offer = () => {
             <Box
               sx={{
                 display: "flex",
+                flexDirection: { xs: "column", md: "row" },
                 justifyContent: "space-between",
-                alignItems: "center",
+                alignItems: { xs: "flex-start", md: "center" },
                 gap: "16px",
                 width: "100%",
               }}
@@ -53,7 +54,7 @@ const Offer = () => {
                   justifyContent: "flex-start",
                   alignItems: "center",
                   gap: "36px",
-                  width: "30%",
+                  width: { xs: "100%", md: "30%" },
                 }}
               >
                 <img src={Dot} alt="dot" />
@@ -74,7 +75,7 @@ const Offer = () => {
                   justifyContent: "space-between",
                   alignItems: "center",
                   gap: "8px",
-                  width: "65%",
+                  width: { xs: "100%", md: "65%" },
                 }}
               >
                 <Typography

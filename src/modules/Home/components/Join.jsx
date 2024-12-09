@@ -21,7 +21,7 @@ const Join = () => {
         flexDirection: "column",
         justifyContent: "space-between",
         alignItems: "center",
-        padding: "70px",
+        padding: { xs: "16px", md: "70px" },
         height: "500px",
         gap: "16px",
       }}
@@ -33,7 +33,7 @@ const Join = () => {
           justifyContent: "center",
           alignItems: "center",
           gap: "8px",
-          width: "750px",
+          width: { xs: "100%", md: "750px" },
         }}
       >
         <Typography
@@ -68,16 +68,19 @@ const Join = () => {
           justifyContent: "space-between",
           alignItems: "center",
           height: "100%",
-          overflow: "hidden",
+          // overflow: "hidden",
           width: "100%",
         }}
       >
         <Box
           sx={{
             display: "flex",
-            justifyContent: "space-between",
+            flexWrap: { xs: "wrap", md: "nowrap" },
+            justifyContent: { xs: "center", md: "space-between" },
+            // alignItems: "center",
             width: "100%",
             zIndex: 1,
+            gap: { xs: "36px", md: null },
           }}
         >
           {avatars.map((avatar, index) => (
@@ -96,14 +99,15 @@ const Join = () => {
                   height: { xs: 50, md: 70 },
                   border: `3px solid ${avatar.borderColor}`,
                   p: 1,
-                  bottom: index === 1 || index === 5 ? "20%" : null,
+                  bottom:
+                    index === 1 || index === 5 ? { xs: 0, md: "20%" } : null,
                   top:
                     index === 0 ||
                     index === 2 ||
                     index === 3 ||
                     index === 4 ||
                     index === 6
-                      ? "90%"
+                      ? { xs: 0, md: "90%" }
                       : null,
                 }}
               />

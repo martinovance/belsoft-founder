@@ -11,7 +11,7 @@ const Attendees = () => {
         justifyContent: "center",
         alignItems: "center",
         gap: "16px",
-        padding: "40px 70px",
+        padding: { xs: "16px", md: "40px 70px" },
         height: "100%",
       }}
     >
@@ -31,6 +31,7 @@ const Attendees = () => {
             fontSize: "45px",
             fontWeight: "bold",
             lineHeight: "120%",
+            textAlign: "center",
           }}
         >
           What Do Our Attendees Have To Say?
@@ -52,9 +53,10 @@ const Attendees = () => {
       <Box
         sx={{
           display: "flex",
+          flexWrap: "wrap",
           justifyContent: "center",
           alignItems: "center",
-          gap: "36px",
+          gap: { xs: "8px", md: "36px" },
           // minWidth: "100%",
           // overflowX: "scroll",
         }}

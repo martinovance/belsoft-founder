@@ -14,8 +14,8 @@ const Sponsor = () => {
   return (
     <Box
       sx={{
-        px: "72px",
-        mb: 15,
+        px: { xs: "16px", md: "72px" },
+        mb: { xs: 5, md: 15 },
       }}
     >
       <Typography
@@ -34,14 +34,15 @@ const Sponsor = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
+          justifyContent: { xs: "flex-start", md: "center" },
+          alignItems: { xs: "flex-start", md: "center" },
           gap: "16px",
           width: "100%",
         }}
       >
         <Typography
           sx={{
+            display: { xs: "none", sm: "flex" },
             font: "Monteserrat",
             fontSize: "45px",
             fontWeight: "bold",
@@ -51,17 +52,29 @@ const Sponsor = () => {
           Why Sponsor
           <br /> Founders Friday?
         </Typography>
+        <Typography
+          sx={{
+            display: { xs: "flex", sm: "none" },
+            font: "Monteserrat",
+            fontSize: "30px",
+            fontWeight: "bold",
+            lineHeight: "120%",
+          }}
+        >
+          Why Sponsor Founders Friday?
+        </Typography>
 
         <Box
           sx={{
             mt: 10,
             display: "flex",
+            flexDirection: { xs: "column", md: "row" },
             justifyContent: "space-between",
             alignItems: "flex-start",
             gap: "48px",
             height: "100%",
             // width: "100%",
-            px: "70px",
+            px: { xs: 0, md: "70px" },
           }}
         >
           <Card
@@ -70,12 +83,13 @@ const Sponsor = () => {
               flexWrap: "wrap",
               justifyContent: "center",
               alignItems: "center",
-              width: "50%",
+              width: { xs: "100%", md: "60%" },
               height: "100%",
-              padding: "40px",
+              padding: "30px",
               border: "1px solid #CA92FF",
               borderRadius: "8px",
               gap: "16px",
+              boxSizing: "border-box",
             }}
           >
             {SPONSORCARD.map((item, i) => (
@@ -126,10 +140,10 @@ const Sponsor = () => {
 
           <Box
             sx={{
-              width: "50%",
+              width: { xs: "100%", md: "50%" },
               display: "flex",
               flexDirection: "column",
-              justifyContent: "flex-start",
+              justifyContent: "flex-end",
               alignItems: "flex-start",
               gap: "8px",
             }}
@@ -169,16 +183,18 @@ const Sponsor = () => {
             <Box
               sx={{
                 display: "flex",
+                flexDirection: { xs: "column", md: "row" },
                 justifyContent: "space-between",
                 alignItems: "center",
-                gap: "4px",
+                gap: "16px",
                 mt: 3,
                 width: "100%",
               }}
             >
-              <Box sx={{ width: "50%" }}>
-                <InputLabel>Name</InputLabel>
+              <Box sx={{ width: { xs: "100%", md: "50%" } }}>
+                <InputLabel sx={{ fontWeight: "bold" }}>Name</InputLabel>
                 <TextField
+                  fullWidth
                   name="full-name"
                   placeholder="Full name"
                   InputProps={{
@@ -190,11 +206,12 @@ const Sponsor = () => {
                   }}
                 />
               </Box>
-              <Box sx={{ width: "50%" }}>
+              <Box sx={{ width: { xs: "100%", md: "50%" } }}>
                 <InputLabel>
-                  Company <span>(optional)</span>
+                  <span style={{ fontWeight: "bold" }}>Company</span> (optional)
                 </InputLabel>
                 <TextField
+                  fullWidth
                   name="full-name"
                   placeholder="Full name"
                   InputProps={{
@@ -210,16 +227,18 @@ const Sponsor = () => {
             <Box
               sx={{
                 display: "flex",
+                flexDirection: { xs: "column", md: "row" },
                 justifyContent: "space-between",
                 alignItems: "center",
-                gap: "4px",
+                gap: "16px",
                 mt: 3,
                 width: "100%",
               }}
             >
-              <Box sx={{ width: "50%" }}>
-                <InputLabel>Email</InputLabel>
+              <Box sx={{ width: { xs: "100%", md: "50%" } }}>
+                <InputLabel sx={{ fontWeight: "bold" }}>Email</InputLabel>
                 <TextField
+                  fullWidth
                   name="email"
                   placeholder="Email address"
                   InputProps={{
@@ -231,9 +250,10 @@ const Sponsor = () => {
                   }}
                 />
               </Box>
-              <Box sx={{ width: "50%" }}>
-                <InputLabel>Phone</InputLabel>
+              <Box sx={{ width: { xs: "100%", md: "50%" } }}>
+                <InputLabel sx={{ fontWeight: "bold" }}>Phone</InputLabel>
                 <TextField
+                  fullWidth
                   name="phone-number"
                   placeholder="Phone number"
                   InputProps={{

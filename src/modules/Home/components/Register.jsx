@@ -9,18 +9,19 @@ const Register = () => {
     <Box
       sx={{
         display: "flex",
+        flexDirection: { xs: "column", md: "row" },
         justifyContent: "space-between",
         alignItems: "flex-start",
         gap: "36px",
-        paddingX: "72px",
+        px: { xs: "16px", md: "72px" },
         mt: 15,
-        height: "434px",
+        height: { xs: "100%", md: "434px" },
       }}
     >
       <Card
         sx={{
           position: "relative",
-          width: "50%",
+          width: { xs: "100%", md: "50%" },
           height: "100%",
           borderRadius: "16px",
         }}
@@ -60,7 +61,7 @@ const Register = () => {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          width: "50%",
+          width: { xs: "100%", md: "50%" },
           height: "100%",
         }}
       >

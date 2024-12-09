@@ -9,12 +9,13 @@ const DayDetails = () => {
     <Box
       sx={{
         display: "flex",
+        flexDirection: { xs: "column", md: "row" },
         justifyContent: "space-between",
         alignItems: "flex-start",
         gap: "36px",
-        paddingX: "72px",
-        mt: 15,
-        height: "434px",
+        px: { xs: "16px", md: "72px" },
+        mt: { xs: 5, md: 15 },
+        height: { xs: "100%", md: "434px" },
         position: "relative",
       }}
     >
@@ -24,7 +25,7 @@ const DayDetails = () => {
           flexDirection: "column",
           justifyContent: "flex-start",
           alignItems: "flex-start",
-          width: "50%",
+          width: { xs: "100%", md: "50%" },
           height: "100%",
           gap: "36px",
         }}
@@ -89,7 +90,7 @@ const DayDetails = () => {
 
       <Box
         sx={{
-          width: "50%",
+          width: { xs: "100%", md: "50%" },
           height: "100%",
           position: "relative",
         }}
@@ -99,10 +100,10 @@ const DayDetails = () => {
           alt="image"
           image={Image2}
           sx={{
-            position: "absolute",
+            position: { xs: "relative", md: "absolute" },
             width: "250px",
             height: "300px",
-            left: "40%",
+            left: { xs: 0, md: "40%" },
           }}
         />
         <CardMedia
@@ -110,10 +111,10 @@ const DayDetails = () => {
           alt="image"
           image={Image1}
           sx={{
-            position: "absolute",
+            position: { xs: "relative", md: "absolute" },
             width: "250px",
             height: "300px",
-            left: "20%",
+            left: { xs: 0, md: "20%" },
             top: "33%",
           }}
         />

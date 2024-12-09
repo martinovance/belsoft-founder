@@ -11,19 +11,20 @@ function Hero() {
     <Box
       sx={{
         position: "relative",
-        width: "50%",
-        mt: 15,
-        placeItems: "center",
+        width: { xs: "100%", md: "50%" },
+        mt: { xs: 2, md: 15 },
+        placeItems: { xs: "start", md: "center" },
+        p: { xs: "16px", md: null },
       }}
     >
       <Card
         sx={{
-          position: "absolute",
+          position: { xs: "relative", md: "absolute" },
           width: "210px",
           height: "227px",
           transform: "rotate(-8deg)",
           backgroundColor: "#B86BFF",
-          left: "26%",
+          left: { xs: 0, md: "26%" },
         }}
       >
         <CardMedia
@@ -66,13 +67,13 @@ function Hero() {
       </Card>
       <Card
         sx={{
-          position: "absolute",
+          position: { xs: "relative", md: "absolute" },
           width: "210px",
           height: "227px",
           transform: "rotate(17deg)",
           backgroundColor: "#6F00D9",
           top: "25%",
-          left: "57%",
+          left: { xs: 0, md: "57%" },
         }}
       >
         <CardMedia
@@ -98,13 +99,13 @@ function Hero() {
       </Card>
       <Card
         sx={{
-          position: "absolute",
+          position: { xs: "relative", md: "absolute" },
           width: "101px",
           height: "117px",
           transform: "rotate(18deg)",
           backgroundColor: "#EBE9ED",
           top: "70%",
-          left: "24%",
+          left: { xs: 0, md: "24%" },
         }}
       >
         <CardMedia
@@ -134,13 +135,13 @@ function Hero() {
         image={Image4}
         alt="image"
         sx={{
-          position: "absolute",
+          position: { xs: "relative", md: "absolute" },
           width: "101px",
           height: "100px",
           transform: "rotate(14deg)",
           borderRadius: 2,
           top: "85%",
-          left: "60%",
+          left: { xs: 0, md: "60%" },
         }}
       />
     </Box>

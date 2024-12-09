@@ -11,9 +11,11 @@ const Upcoming = () => {
         background: `url(${UpcomingImage})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        height: "608px",
-        px: "70px",
+        height: { xs: "100%", md: "608px" },
+        px: { xs: "16px", md: "72px" },
+        py: "16px",
         display: "flex",
+        flexDirection: { xs: "column", md: "row" },
         justifyContent: "space-between",
         alignItems: "center",
         gap: "16px",
@@ -25,7 +27,7 @@ const Upcoming = () => {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "flex-start",
-          width: "50%",
+          width: { xs: "100%", md: "50%" },
           height: "100%",
           gap: "16px",
         }}
@@ -90,15 +92,16 @@ const Upcoming = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "flex-end",
-          width: "40%",
+          width: { xs: "100%", md: "40%" },
         }}
       >
-        <img
+        <Box
+          component="img"
           src={Logo2}
           alt="logo"
-          style={{
-            height: "454px",
-            width: "464px",
+          sx={{
+            height: { xs: "100%", md: "454px" },
+            width: { xs: "100%", md: "464px" },
           }}
         />
       </Box>
