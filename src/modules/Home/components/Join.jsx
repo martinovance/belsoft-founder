@@ -21,7 +21,7 @@ const Join = () => {
         flexDirection: "column",
         justifyContent: "space-between",
         alignItems: "center",
-        padding: { xs: "16px", md: "70px" },
+        p: { xs: "16px", md: "70px" },
         height: "500px",
         gap: "16px",
       }}
@@ -68,7 +68,6 @@ const Join = () => {
           justifyContent: "space-between",
           alignItems: "center",
           height: "100%",
-          // overflow: "hidden",
           width: "100%",
         }}
       >
@@ -77,7 +76,6 @@ const Join = () => {
             display: "flex",
             flexWrap: { xs: "wrap", md: "nowrap" },
             justifyContent: { xs: "center", md: "space-between" },
-            // alignItems: "center",
             width: "100%",
             zIndex: 1,
             gap: { xs: "36px", md: null },

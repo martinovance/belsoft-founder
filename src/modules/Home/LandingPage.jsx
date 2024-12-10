@@ -26,7 +26,7 @@ const Home = () => {
         direction={{ xs: "column", md: "row" }}
         sx={{
           position: "relative",
-          padding: { xs: "24px 16px", md: "24px 72px" },
+          p: { xs: "24px 16px", md: "24px 72px" },
         }}
       >
         <Box
@@ -37,7 +37,7 @@ const Home = () => {
             display: { xs: "none", md: "flex" },
             position: "absolute",
             height: "746px",
-            left: "38.5%",
+            left: "38%",
             mt: { md: 1, lg: 3 },
             zIndex: "-10",
           }}

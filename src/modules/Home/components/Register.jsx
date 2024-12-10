@@ -46,7 +46,6 @@ const Register = () => {
           <PlayCircleFilledWhiteIcon
             sx={{
               color: "#fff",
-              // backgroundColor: "purple",
               width: "25%",
               height: "25%",
             }}
@@ -104,6 +103,10 @@ const Register = () => {
               backgroundColor: "#A649FF",
               gap: "8px",
               textTransform: "Capitalize",
+              "&:hover": {
+                backgroundColor: "#9524FF",
+                pointer: "cursor",
+              },
             }}
           >
             Register

@@ -85,7 +85,7 @@ const Sponsor = () => {
               alignItems: "center",
               width: { xs: "100%", md: "60%" },
               height: "100%",
-              padding: "30px",
+              p: "30px",
               border: "1px solid #CA92FF",
               borderRadius: "8px",
               gap: "16px",
@@ -106,7 +106,7 @@ const Sponsor = () => {
                     item.title === "Brand Association"
                       ? "#EDDBFF"
                       : "#DCB6FF",
-                  padding: "5px",
+                  p: "5px",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "center",
@@ -272,11 +272,15 @@ const Sponsor = () => {
                 width: "189px",
                 height: "40px",
                 borderRadius: "4px",
-                padding: "20px 70px",
+                p: "20px 70px",
                 color: "#fff",
                 backgroundColor: "#A649FF",
                 gap: "8px",
                 textTransform: "Capitalize",
+                "&:hover": {
+                  backgroundColor: "#9524FF",
+                  pointer: "cursor",
+                },
               }}
             >
               Sponsor

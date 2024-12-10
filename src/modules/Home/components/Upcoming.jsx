@@ -76,7 +76,7 @@ const Upcoming = () => {
             width: "189px",
             height: "40px",
             borderRadius: "50px",
-            padding: "20px",
+            p: "20px",
             color: "#A649FF",
             borderColor: "#A649FF",
             gap: "8px",

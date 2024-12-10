@@ -11,7 +11,7 @@ const Attendees = () => {
         justifyContent: "center",
         alignItems: "center",
         gap: "16px",
-        padding: { xs: "16px", md: "40px 70px" },
+        p: { xs: "16px", md: "40px 70px" },
         height: "100%",
       }}
     >

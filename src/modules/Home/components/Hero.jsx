@@ -23,8 +23,8 @@ function Hero() {
       <Card
         sx={{
           position: { xs: "relative", md: "absolute" },
-          width: "210px",
-          height: "227px",
+          width: "200px",
+          height: "217px",
           transform: "rotate(-8deg)",
           backgroundColor: "#B86BFF",
           left: { xs: 0, md: "26%", xl: "20%" },
@@ -71,12 +71,12 @@ function Hero() {
       <Card
         sx={{
           position: { xs: "relative", md: "absolute" },
-          width: "210px",
-          height: "227px",
+          width: "200px",
+          height: "217px",
           transform: "rotate(17deg)",
           backgroundColor: "#6F00D9",
           top: "25%",
-          left: { xs: 0, md: "57%", xl: "41%" },
+          left: { xs: 0, md: "56%", xl: "41%" },
         }}
       >
         <CardMedia

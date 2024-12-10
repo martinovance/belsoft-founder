@@ -21,7 +21,7 @@ const Navbar = () => {
         width: "100%",
         height: "80px",
         backgroundColor: "#fff",
-        padding: { xs: "24px 16px", md: "24px 72px" },
+        p: { xs: "24px 16px", md: "24px 72px" },
         borderBottom: "1px solid #000",
       }}
     >
@@ -133,11 +133,12 @@ const Navbar = () => {
               color: "#9524FF",
               gap: "4px",
               fontSize: { xs: "12px", sm: "20px" },
-              // "&:hover": {
-              //   backgroundColor: "#BEF264",
-              //   pointer: "cursor",
-              //   color: "#000000",
-              // },
+              "&:hover": {
+                backgroundColor: "#9524FF",
+                color: "#fff",
+                pointer: "cursor",
+                borderColor: "#9524FF",
+              },
             }}
           >
             Register
