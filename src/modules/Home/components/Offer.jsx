@@ -19,7 +19,7 @@ const Offer = () => {
       <Typography
         sx={{
           font: "Montserrat",
-          fontSize: "45px",
+          fontSize: "40px",
           fontWeight: "bold",
           lineHeight: "120%",
         }}
@@ -46,6 +46,7 @@ const Offer = () => {
                 alignItems: { xs: "flex-start", md: "center" },
                 gap: "16px",
                 width: "100%",
+                mb: { xs: 2, sm: 0 },
               }}
             >
               <Box
@@ -53,7 +54,7 @@ const Offer = () => {
                   display: "flex",
                   justifyContent: "flex-start",
                   alignItems: "center",
-                  gap: "36px",
+                  gap: { xs: "8px", sm: "36px" },
                   width: { xs: "100%", md: "30%" },
                 }}
               >

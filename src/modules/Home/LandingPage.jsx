@@ -38,7 +38,7 @@ const Home = () => {
             position: "absolute",
             height: "746px",
             left: "38.5%",
-            mt: 3,
+            mt: { md: 1, lg: 3 },
             zIndex: "-10",
           }}
         />
@@ -75,7 +75,6 @@ const Home = () => {
       <Box
         sx={{
           position: "relative",
-          // height: "600px",
         }}
       >
         <Box

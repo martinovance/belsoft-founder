@@ -56,6 +56,7 @@ const Navbar = () => {
               color: "#000",
               fontWeight: "bold",
               fontSize: { xs: 16, sm: 28 },
+              textShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)",
             }}
           >
             Founder&apos;s Friday
@@ -67,7 +68,7 @@ const Navbar = () => {
             display: "flex",
             justifyContent: "flex-end",
             alignItems: "center",
-            gap: { xs: 1, md: 4, lg: 8 },
+            gap: { xs: 1, md: 3, lg: 8 },
           }}
         >
           <Box
@@ -75,7 +76,7 @@ const Navbar = () => {
               display: { xs: "none", md: "flex" },
               justifyContent: "center",
               alignItems: "center",
-              gap: "32px",
+              gap: { md: "8px", lg: "32px" },
             }}
           >
             <Typography

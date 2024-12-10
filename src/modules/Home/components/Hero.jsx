@@ -11,6 +11,9 @@ function Hero() {
     <Box
       sx={{
         position: "relative",
+        display: { xs: "flex", md: "block" },
+        flexWrap: { xs: "wrap", md: "nowrap" },
+        justifyContent: "center",
         width: { xs: "100%", md: "50%" },
         mt: { xs: 2, md: 15 },
         placeItems: { xs: "start", md: "center" },
@@ -24,7 +27,7 @@ function Hero() {
           height: "227px",
           transform: "rotate(-8deg)",
           backgroundColor: "#B86BFF",
-          left: { xs: 0, md: "26%" },
+          left: { xs: 0, md: "26%", xl: "20%" },
         }}
       >
         <CardMedia
@@ -73,7 +76,7 @@ function Hero() {
           transform: "rotate(17deg)",
           backgroundColor: "#6F00D9",
           top: "25%",
-          left: { xs: 0, md: "57%" },
+          left: { xs: 0, md: "57%", xl: "41%" },
         }}
       >
         <CardMedia
@@ -105,7 +108,7 @@ function Hero() {
           transform: "rotate(18deg)",
           backgroundColor: "#EBE9ED",
           top: "70%",
-          left: { xs: 0, md: "24%" },
+          left: { xs: 0, md: "24%", xl: "20%" },
         }}
       >
         <CardMedia
@@ -141,7 +144,7 @@ function Hero() {
           transform: "rotate(14deg)",
           borderRadius: 2,
           top: "85%",
-          left: { xs: 0, md: "60%" },
+          left: { xs: 0, md: "60%", xl: "40%" },
         }}
       />
     </Box>

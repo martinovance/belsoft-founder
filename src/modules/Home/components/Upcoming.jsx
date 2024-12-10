@@ -12,8 +12,8 @@ const Upcoming = () => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         height: { xs: "100%", md: "608px" },
-        px: { xs: "16px", md: "72px" },
-        py: "16px",
+        px: { xs: "16px", sm: "72px" },
+        py: { xs: "16px", sm: "72px" },
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
         justifyContent: "space-between",
@@ -100,8 +100,8 @@ const Upcoming = () => {
           src={Logo2}
           alt="logo"
           sx={{
-            height: { xs: "100%", md: "454px" },
-            width: { xs: "100%", md: "464px" },
+            height: { xs: "50%", sm: "454px" },
+            width: { xs: "50%", sm: "464px" },
           }}
         />
       </Box>

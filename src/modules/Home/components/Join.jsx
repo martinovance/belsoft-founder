@@ -100,14 +100,16 @@ const Join = () => {
                   border: `3px solid ${avatar.borderColor}`,
                   p: 1,
                   bottom:
-                    index === 1 || index === 5 ? { xs: 0, md: "20%" } : null,
+                    index === 1 || index === 5
+                      ? { xs: 0, md: "12%", lg: "20%" }
+                      : null,
                   top:
                     index === 0 ||
                     index === 2 ||
                     index === 3 ||
                     index === 4 ||
                     index === 6
-                      ? { xs: 0, md: "90%" }
+                      ? { xs: 0, md: "60%", lg: "90%" }
                       : null,
                 }}
               />

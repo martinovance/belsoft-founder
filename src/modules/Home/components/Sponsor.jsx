@@ -16,6 +16,7 @@ const Sponsor = () => {
       sx={{
         px: { xs: "16px", md: "72px" },
         mb: { xs: 5, md: 15 },
+        mt: { xs: 5, md: 0 },
       }}
     >
       <Typography
@@ -66,14 +67,13 @@ const Sponsor = () => {
 
         <Box
           sx={{
-            mt: 10,
+            mt: { xs: 5, md: 10 },
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
             justifyContent: "space-between",
             alignItems: "flex-start",
             gap: "48px",
             height: "100%",
-            // width: "100%",
             px: { xs: 0, md: "70px" },
           }}
         >
@@ -183,7 +183,7 @@ const Sponsor = () => {
             <Box
               sx={{
                 display: "flex",
-                flexDirection: { xs: "column", md: "row" },
+                flexDirection: { xs: "column", sm: "row" },
                 justifyContent: "space-between",
                 alignItems: "center",
                 gap: "16px",
@@ -191,7 +191,7 @@ const Sponsor = () => {
                 width: "100%",
               }}
             >
-              <Box sx={{ width: { xs: "100%", md: "50%" } }}>
+              <Box sx={{ width: { xs: "100%", sm: "50%" } }}>
                 <InputLabel sx={{ fontWeight: "bold" }}>Name</InputLabel>
                 <TextField
                   fullWidth
@@ -206,7 +206,7 @@ const Sponsor = () => {
                   }}
                 />
               </Box>
-              <Box sx={{ width: { xs: "100%", md: "50%" } }}>
+              <Box sx={{ width: { xs: "100%", sm: "50%" } }}>
                 <InputLabel>
                   <span style={{ fontWeight: "bold" }}>Company</span> (optional)
                 </InputLabel>
@@ -227,7 +227,7 @@ const Sponsor = () => {
             <Box
               sx={{
                 display: "flex",
-                flexDirection: { xs: "column", md: "row" },
+                flexDirection: { xs: "column", sm: "row" },
                 justifyContent: "space-between",
                 alignItems: "center",
                 gap: "16px",
@@ -235,7 +235,7 @@ const Sponsor = () => {
                 width: "100%",
               }}
             >
-              <Box sx={{ width: { xs: "100%", md: "50%" } }}>
+              <Box sx={{ width: { xs: "100%", sm: "50%" } }}>
                 <InputLabel sx={{ fontWeight: "bold" }}>Email</InputLabel>
                 <TextField
                   fullWidth
@@ -250,7 +250,7 @@ const Sponsor = () => {
                   }}
                 />
               </Box>
-              <Box sx={{ width: { xs: "100%", md: "50%" } }}>
+              <Box sx={{ width: { xs: "100%", sm: "50%" } }}>
                 <InputLabel sx={{ fontWeight: "bold" }}>Phone</InputLabel>
                 <TextField
                   fullWidth

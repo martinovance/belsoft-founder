@@ -93,6 +93,9 @@ const DayDetails = () => {
           width: { xs: "100%", md: "50%" },
           height: "100%",
           position: "relative",
+          display: { xs: "flex", md: "block" },
+          flexWrap: { xs: "wrap", md: "nowrap" },
+          justifyContent: "center",
         }}
       >
         <CardMedia
@@ -101,8 +104,8 @@ const DayDetails = () => {
           image={Image2}
           sx={{
             position: { xs: "relative", md: "absolute" },
-            width: "250px",
-            height: "300px",
+            width: { xs: "50%", md: "250px" },
+            height: { xs: "100%", md: "300px" },
             left: { xs: 0, md: "40%" },
           }}
         />
@@ -112,8 +115,8 @@ const DayDetails = () => {
           image={Image1}
           sx={{
             position: { xs: "relative", md: "absolute" },
-            width: "250px",
-            height: "300px",
+            width: { xs: "50%", md: "250px" },
+            height: { xs: "100%", md: "300px" },
             left: { xs: 0, md: "20%" },
             top: "33%",
           }}

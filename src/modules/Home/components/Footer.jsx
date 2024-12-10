@@ -83,10 +83,11 @@ const Footer = () => {
         <Box
           sx={{
             display: "flex",
-            flexDirection: { xs: "column", md: "row" },
+            flexDirection: { xs: "column", sm: "row" },
             justifyContent: "space-between",
             alignItems: "center",
             width: "100%",
+            gap: "16px",
           }}
         >
           <Box
@@ -125,9 +126,10 @@ const Footer = () => {
           <Box
             sx={{
               display: "flex",
-              justifyContent: "flex-end",
+              flexWrap: { xs: "wrap", sm: "nowrap" },
+              justifyContent: { xs: "center", sm: "flex-end" },
               alignItems: "center",
-              gap: "32px",
+              gap: { xs: "16px", sm: "32px" },
             }}
           >
             <Typography

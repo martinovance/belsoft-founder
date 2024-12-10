@@ -15,7 +15,7 @@ const About = () => {
         alignItems: "flex-start",
         gap: "36px",
         px: { xs: "16px", md: "72px" },
-        mt: { xs: 2, md: 15 },
+        mt: { xs: 2, md: 3, lg: 15 },
         height: { xs: "100%", md: "434px" },
       }}
     >
